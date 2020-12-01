@@ -1,0 +1,41 @@
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Loading CSS 样式 */
+.bg-rotate-loader {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 5px solid #B8D0FA;
+  border-top-color: #0052EC;
+  border-radius: 50%;
+  animation: loader-rotate 1s linear infinite;
+  -webkit-animation: loader-rotate 1s linear infinite;
+}
+
+@keyframes loader-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loader-rotate {
+  0% {
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
